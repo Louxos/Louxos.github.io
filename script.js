@@ -23,7 +23,7 @@ document.addEventListener('keydown', (event) => {
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const revealElements = document.querySelectorAll('.section-label, .about-layout > *, .section-heading > *, .project-card, .approach-grid article, .contact-panel');
+const revealElements = document.querySelectorAll('.section-label, .about-layout > *, .section-heading > *, .project-card, .approach-grid article, .manifesto, .contact-panel');
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
   document.documentElement.classList.add('js-ready');
   const observer = new IntersectionObserver((entries, activeObserver) => {
